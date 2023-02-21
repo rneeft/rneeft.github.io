@@ -1,6 +1,6 @@
 ---
 title: Filter Active Tasks by [Me] And [Me] as Group Member
-date: 2011-11-28 15:02:00 +0200
+date: 2011-11-28 15:02:00 +0100
 categories: [Programming, Sharepoint]
 tags: [sharepoint,me,tasks]     # TAG names should always be lowercase
 ---
