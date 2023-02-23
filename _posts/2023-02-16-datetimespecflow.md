@@ -1,6 +1,6 @@
 ---
 title: Special DateTime value retriever
-date: 2023-02-16 18:35:00 +0200
+date: 2023-02-16 18:35:00 +0100
 categories: [Testing, Specflow]
 tags: [specflow,gherkin,value-retriever,datetime]     # TAG names should always be lowercase
 ---

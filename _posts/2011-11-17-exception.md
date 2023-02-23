@@ -1,6 +1,6 @@
 ---
 title: Don't step into that exception
-date: 2011-11-17 09:29:00 +0200
+date: 2011-11-17 09:29:00 +0100
 categories: [Programming, Debugging]
 tags: [exception,dotnet,debuggerstepthrough,diagnostics]     # TAG names should always be lowercase
 ---
