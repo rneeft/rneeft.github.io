@@ -113,8 +113,6 @@ public static class ServiceCollectionDecorate
 
 The code example below demonstrates how to register the services and how to decorate and shows that it is still possible to add a service without the decorator. 
 
-Registering a decorate happens during startup. The code example below 
-
 ```csharp
 public static IServiceCollection AddServices(this IServiceCollection services)
 {
