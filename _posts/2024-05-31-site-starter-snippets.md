@@ -1,7 +1,7 @@
 ---
-title: Decorators DotNet Dependency Injector
+title: Site starter snippets
 date: 2024-05-31 11:00:00 +0200
-categories: [Programming, Patterns]
+categories: [Programming, html]
 tags: [decorator,di,dependency-injector]     # TAG names should always be lowercase
 ---
 
