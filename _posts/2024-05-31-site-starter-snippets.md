@@ -1,6 +1,6 @@
 ---
 title: Decorators DotNet Dependency Injector
-date: 2023-02-21 10:23:00 +0100
+date: 2024-05-31 11:00:00 +0200
 categories: [Programming, Patterns]
 tags: [decorator,di,dependency-injector]     # TAG names should always be lowercase
 ---
