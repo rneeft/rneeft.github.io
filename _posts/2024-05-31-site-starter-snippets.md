@@ -2,7 +2,7 @@
 title: Site starter snippets
 date: 2024-05-31 11:00:00 +0200
 categories: [Programming, html]
-tags: [start, programming, html, bootstrap, cytoscape]     # TAG names should always be lowercase
+tags: [programming,html,bootstrap,cytoscape-js]
 ---
 
 Sometimes, I just want to start quickly with an empty HTML file. Here are some starting snippets for HTML.
