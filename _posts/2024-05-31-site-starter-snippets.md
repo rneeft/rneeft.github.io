@@ -1,7 +1,7 @@
 ---
 title: Site starter snippets
 date: 2024-05-31 11:00:00 +0200
-categories: [Programming, html]
+categories: [Templates, Programming, html]
 tags: [programming,html,bootstrap,cytoscape-js]
 ---
 
