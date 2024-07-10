@@ -1,5 +1,5 @@
 ---
-title: Add Reuqired column to existing SQL Database Table
+title: Add Required column to existing SQL Database Table
 date: 2024-07-10 10:46:00 +0100
 categories: [Templates, sql]
 tags: [alter,sql]     # TAG names should always be lowercase
