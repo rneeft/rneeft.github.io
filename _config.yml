@@ -31,9 +31,6 @@ url: 'https://rickneeft.dev'
 github:
   username: rneeft             # change to your github username
 
-twitter:
-  username: rneeft            # change to your twitter username
-
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -80,7 +77,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://pbs.twimg.com/profile_images/1563210857739419648/C9_Tp_i8_400x400.jpg
+avatar: https://rickneeft.dev/assets/me.jpeg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
