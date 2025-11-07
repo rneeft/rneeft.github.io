@@ -1,6 +1,6 @@
 ---
 title: How to Show the GRUB Menu and Boot Information on Startup in Ubuntu
-date: 2025-02-11 16:11:00 +0100
+date: 2025-11-02 16:11:00 +0100
 categories: [Grub, Ubuntu, Linux]
 tags: [grub, ubuntu, linux, boot]     # TAG names should always be lowercase
 ---
