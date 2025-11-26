@@ -12,7 +12,7 @@ Usage notes:
 - The snippet reads from the Current User personal store (`StoreName.My`, `StoreLocation.CurrentUser`).
 - Thumbprints are printed in-dim to make them easy to copy; CN is truncated to 40 characters for readability.
 
-```charp
+```csharp
 #: package Spectre.Console@0.49.1
 
 using System;
