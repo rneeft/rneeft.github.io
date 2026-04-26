@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
 My name is Rick Neeft, a software programmer in The Netherlands. I work for VECOZO, but **this blog, its content and opinions are my own and do not represent my employer's view in any way**. I finished my master's degree at the Open University on a testing subject. My coding journey started when I was 8 with my MSX2 computer and programming in BASIC. I have over 15 years of application development using Microsoft (.NET) technologies. 
