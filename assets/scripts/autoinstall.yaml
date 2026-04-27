@@ -1,0 +1,106 @@
+#cloud-config
+autoinstall:
+  version: 1
+
+  locale: en_GB.UTF-8
+  keyboard:
+    layout: us
+
+  timezone: Europe/Amsterdam
+
+  identity:
+    hostname: FrameworkPro
+    username: Rick
+    password: "*"
+
+  user-data:
+    users:
+      - name: Rick
+        lock-password: false
+
+  ssh:
+    install-server: true
+    allow-pw: true
+
+  # -------------------------
+  # INSTALLER OPTIONS (equivalent to GUI checkboxes)
+  # -------------------------
+  codecs:
+    install: true   # "Download additional media formats"
+
+  drivers:
+    install: true   # "Download third-party tools (drivers)"
+
+  updates: security
+
+  # -------------------------
+  # STORAGE (UEFI + 2 partitions)
+  # -------------------------
+  storage:
+    layout:
+      name: direct
+
+    config:
+      - type: disk
+        id: disk0
+        match:
+          size: largest
+        ptable: gpt
+        wipe: superblock-recursive
+        preserve: false
+
+      # EFI (1 GiB)
+      - type: partition
+        id: efi-part
+        device: disk0
+        size: 1G
+        flag: boot
+        grub_device: true
+
+      - type: format
+        id: efi-format
+        fstype: fat32
+        volume: efi-part
+
+      - type: mount
+        id: efi-mount
+        device: efi-format
+        path: /boot/efi
+
+      # ROOT (rest of disk)
+      - type: partition
+        id: root-part
+        device: disk0
+        size: -1
+
+      - type: format
+        id: root-format
+        fstype: ext4
+        volume: root-part
+
+      - type: mount
+        id: root-mount
+        device: root-format
+        path: /
+
+  # -------------------------
+  # BASE PACKAGES ONLY
+  # (keep installer clean)
+  # -------------------------
+  packages:
+    - ufw
+    - curl
+
+  # -------------------------
+  # FIREWALL SETUP
+  # -------------------------
+  late-commands:
+    - curtin in-target --target=/target -- passwd -d Rick
+    - curtin in-target --target=/target -- chage -d 0 Rick
+
+    - curtin in-target --target=/target -- ufw enable
+    - curtin in-target --target=/target -- ufw default deny incoming
+    - curtin in-target --target=/target -- ufw default allow outgoing
+
+    # Bootstrap full machine setup AFTER install
+    - curtin in-target --target=/target -- bash -c "curl -fsSL https://rickneeft.dev/scripts/bootstrap.sh | bash"
