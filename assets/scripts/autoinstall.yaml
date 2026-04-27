@@ -10,13 +10,8 @@ autoinstall:
 
   identity:
     hostname: FrameworkPro
-    username: Rick
-    password: "*"
-
-  user-data:
-    users:
-      - name: Rick
-        lock-password: false
+    username: rick
+    password: *
 
   ssh:
     install-server: true
@@ -95,8 +90,8 @@ autoinstall:
   # FIREWALL SETUP
   # -------------------------
   late-commands:
-    - curtin in-target --target=/target -- passwd -d Rick
-    - curtin in-target --target=/target -- chage -d 0 Rick
+    - curtin in-target --target=/target -- passwd -d rick
+    - curtin in-target --target=/target -- chage -d 0 rick
 
     - curtin in-target --target=/target -- ufw enable
     - curtin in-target --target=/target -- ufw default deny incoming
