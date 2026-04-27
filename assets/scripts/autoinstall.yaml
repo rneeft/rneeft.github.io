@@ -34,7 +34,7 @@ autoinstall:
   updates: security
 
   # -------------------------
-  # STORAGE (UEFI + 2 partitions)
+  # STORAGE (UEFI + 1 partitions)
   # -------------------------
   storage:
     layout:
@@ -103,4 +103,4 @@ autoinstall:
     - curtin in-target --target=/target -- ufw default allow outgoing
 
     # Bootstrap full machine setup AFTER install
-    - curtin in-target --target=/target -- bash -c "curl -fsSL https://rickneeft.dev/scripts/bootstrap.sh | bash"
+    - curtin in-target --target=/target -- bash -c "curl -fsSL https://rickneeft.dev/assets/scripts/bootstrap.sh | bash"
