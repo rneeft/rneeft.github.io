@@ -59,7 +59,6 @@ Then install the following application
 - Blur my Shell
 - Clipboard Indicator
 - Color Picker
-- Wiggle
 - Display Configuration Switcher
 
 ## Grub changes
@@ -74,3 +73,20 @@ Locate the `GRUB_CMDLINE_LINUX_DEFAULT` and change the line to `GRUB_CMDLINE_LIN
 ```bash
 sudo update-grub
 ```
+
+## Start point functionality
+In the Windows Terminal you can type `start .` to open the explorer in the current folder. In Ubuntu you need to type `xdg-open .`. However you can add a function as shell alias to `~/.bashrc`.
+
+```bash
+start() {
+    xdg-open "$@"
+}
+```
+
+Optionally reload the bash file:
+
+```bash
+source ~/.bashrc
+```
+
+And now also in the Ubuntu shell you can type `start .` to open the explorer.
