@@ -90,3 +90,17 @@ source ~/.bashrc
 ```
 
 And now also in the Ubuntu shell you can type `start .` to open the explorer.
+
+## Update firmware
+
+```bash
+fwupdmgr refresh --force
+```
+
+```bash
+fwupdmgr get-updates
+```
+
+```bash
+fwupdmgr update
+```
